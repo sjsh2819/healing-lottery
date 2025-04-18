@@ -7,7 +7,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: command === "serve" ? "/" : "/healing-lottery/",
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
